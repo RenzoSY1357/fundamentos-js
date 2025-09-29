@@ -1,2 +1,11 @@
+//Ejercicio 5
+let num = prompt("Ingresa un número");
 
-// Aquí va el código JS para el Ejercicio 5. No resuelto, solo preparado.
+num = Number(num);
+
+if (num % 2 === 0){
+console.log("El número que ha introducido es par");
+}
+else{
+console.log("El número que ha introducido es impar");
+}
