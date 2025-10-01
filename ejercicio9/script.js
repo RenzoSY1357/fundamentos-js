@@ -1,2 +1,13 @@
+//Ejercicio 9
 
-// Aquí va el código JS para el Ejercicio 9. No resuelto, solo preparado.
+let cadena = "Hola mundo";
+console.log("Cadena normal: " + cadena);
+
+function cadenaInvertida(cadena) {
+
+    let cadenaReves = cadena.split("").reverse().join("");
+    console.log("Cadena Invertida: " + cadenaReves);
+    return cadenaReves;
+
+}
+cadenaInvertida(cadena);
