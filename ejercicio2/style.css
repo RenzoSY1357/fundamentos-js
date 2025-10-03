@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 24px 24px 24px;
+}
+
+h1 {
+    color: #2a4d7a;
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+button#miBoton {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 28px;
+    background: #2a4d7a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button#miBoton:hover {
+    background: #183153;
+}
+
+code {
+    background: #eaf0fa;
+    color: #2a4d7a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.98em;
+}

@@ -1,19 +1,21 @@
 //Ejercicio 7
+document.getElementById('miBoton').addEventListener('click', function(){
 
-let palabra = prompt("Ingrese una palabra");
+    let palabra = prompt("Ingrese una palabra");
 
-function contarVocales(palabra) {
+    function contarVocales(palabra) {
 
-let contador = 0;
-let vocales = "aeiouAEIOU";
+    let contador = 0;
+    let vocales = "aeiouAEIOU";
 
-    for (let i = 0; i < palabra.length; i++) {
-        if (vocales.includes(palabra[i])) {
-            contador++;
+        for (let i = 0; i < palabra.length; i++) {
+            if (vocales.includes(palabra[i])) {
+                contador++;
+            }
         }
+
+        console.log("La palabra contiene " + contador + " vocales");
     }
 
-    console.log("La palabra contiene " + contador + " vocales");
-}
-
-contarVocales(palabra);
+    contarVocales(palabra);
+})

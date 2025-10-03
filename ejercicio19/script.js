@@ -1,37 +1,32 @@
-const scaner = require('readline')
+//Ejercicio19
+document.getElementById('miBoton').addEventListener('click', function(){
 
-const lector = scaner.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+    const numeros = []
 
-const numeros = []
+    let i = 1;
 
-let i = 1;
+    function Promedio() {
 
-function Promedio() {
+        if(i <= 5){
 
-    if(i <= 5){
-
-        lector.question(`(${i}) Introduce un numero:`, function(num){
+            let num = prompt(`(${i}) Introduce un numero:`)
             numeros.push(Number(num))
             i++
             Promedio()
-        })
 
-    } else {
+        } else {
 
-        let promedio = 0
-        let suma = 0
+            let promedio = 0
+            let suma = 0
 
-        for(let i = 0; i< numeros.length; i++){
-            suma += numeros[i]
+            for(let i = 0; i< numeros.length; i++){
+                suma += numeros[i]
+            }
+
+            promedio = (suma/numeros.length)
+            console.log("Promedio de los numeros:", promedio)
         }
-
-        promedio = (suma/numeros.length)
-        console.log("Promedio de los numeros:", promedio)
-        lector.close()
     }
-}
 
-Promedio()
+    Promedio()
+})

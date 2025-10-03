@@ -1,17 +1,20 @@
 //Ejercicio 6
-function verificarParImpar() {
+document.getElementById('miBoton').addEventListener('click', function(){
 
-const input = document.getElementById("numeroInput").value;
+    function verificarParImpar() {
 
-const numero = Number(input);
+        const input = document.getElementById("numeroInput").value;
 
-const resultado = document.getElementById("resultado");
+        const numero = Number(input);
 
-if (numero % 2 === 0){
-console.log("El número que ha introducido es par");
-}
-else{
-console.log("El número que ha introducido es impar");
-}
+        const resultado = document.getElementById("resultado");
 
-}
+        if (numero % 2 === 0){
+        console.log("El número que ha introducido es par");
+        }
+        else{
+        console.log("El número que ha introducido es impar");
+        }
+
+    }
+})

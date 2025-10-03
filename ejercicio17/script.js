@@ -1,33 +1,24 @@
+//Ejercicio17
+document.getElementById('miBoton').addEventListener('click', function(){
 
-const scaner = require('readline')
 
-const lector = scaner.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+    const numeros = []
 
-const numeros = []
+    let i = 1;
 
-let i = 1;
+    function Ordenado() {
 
-function Ordenado() {
-
-    if(i <= 5){
-        lector.question(`(${i}) Introduce un numero: `, function(num){
-            numeros.push(num)
-            i++
-            Ordenado()
-        })
-    }
-    else {
+        for (let i=1; i <= 5; i++){
+            let num = prompt(`(${i}) Introduce un numero:`)
+            numeros.push(Number(num))
+        }
+        
         numeros.sort(function(a, b) {
             return a - b
         })
 
         console.log("Array ordenado de menor a mayor: ", numeros)
-        lector.close()
     }
-}
 
-Ordenado()
-
+    Ordenado()
+})

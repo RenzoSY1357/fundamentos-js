@@ -1,23 +1,17 @@
+//Ejercicio16
+document.getElementById('miBoton').addEventListener('click', function(){
 
-const scaner = require('readline');
+    function toFarenheit(celsius){
 
-const lector = scaner.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+        let Farenheit = (celsius*(9/5)+32)
 
-function toFarenheit(celsius){
+        return Farenheit;
+    }
 
-    let Farenheit = (celsius*(9/5)+32)
-
-    return Farenheit;
-}
-
-lector.question('Introduce un numero en celsius: ', function(cels){
+    const cels = prompt('Introduce un numero:')
 
     let far = toFarenheit(cels);
 
     console.log(`De ${cels}ºC a ${far}ºF`);
 
-    lector.close()
 })

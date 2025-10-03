@@ -1,22 +1,20 @@
-const scaner = require('readline')
+//Ejercicio18
+document.getElementById('miBoton').addEventListener('click', function(){
 
-const lector = scaner.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+    const frase = prompt('Ingresa la frase:');
+    if(!frase) return
+        const palabras = frase.trim().split(/\s+/);
 
-function PalabraLarga(palabras){
-    let masLarga = "";
-    for (let i = 0; i < palabras.length; i++){
-        if(palabras[i].length > masLarga.length){
-            masLarga = palabras[i]
+    function PalabraLarga(palabras){
+        let masLarga = "";
+        for (let i = 0; i < palabras.length; i++){
+            if(palabras[i].length > masLarga.length){
+                masLarga = palabras[i]
+            }
         }
+        return masLarga;
     }
-    return masLarga;
-}
 
-lector.question('Ingresa la frase: ', function(frase){
-    const palabras = frase.trim().split(/\s+/);
     console.log("Palabra mas larga:", PalabraLarga(palabras))
-    lector.close()
+
 })

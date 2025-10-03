@@ -1,17 +1,10 @@
-const scaner = require('readline')
+//Ejercicio20
+document.getElementById('miBoton').addEventListener('click', function(){
 
-const lector = scaner.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
-
-
-lector.question('Ingresa el texto: ', function(texto){
-    const mayuscula = texto.toUpperCase()
+    let texto = prompt('Ingresa el texto:')
     const minuscula = texto.toLowerCase()
+    const mayuscula = texto.toUpperCase()
 
     console.log("Mayuscula:", mayuscula)
     console.log("Minuscula:", minuscula)
-    lector.close()
 })
-
