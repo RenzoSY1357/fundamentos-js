@@ -1,2 +1,17 @@
+//Ejercicio 6
+function verificarParImpar() {
 
-// Aquí va el código JS para el Ejercicio 6. No resuelto, solo preparado.
+const input = document.getElementById("numeroInput").value;
+
+const numero = Number(input);
+
+const resultado = document.getElementById("resultado");
+
+if (numero % 2 === 0){
+console.log("El número que ha introducido es par");
+}
+else{
+console.log("El número que ha introducido es impar");
+}
+
+}

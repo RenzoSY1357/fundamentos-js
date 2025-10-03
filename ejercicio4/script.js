@@ -1,2 +1,6 @@
+//Ejercicio 4
+const numero1 = prompt("Escribe un número");
+const numero2 = prompt("Escribe otro número");
+const suma = Number(numero1) + Number(numero2);
 
-// Aquí va el código JS para el Ejercicio 4. No resuelto, solo preparado.
+console.log("La suma de ambos números es de " + suma);

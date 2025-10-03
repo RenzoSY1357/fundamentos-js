@@ -1,2 +1,14 @@
+//Ejercicio 8
+let numeroRandom = Math.floor(Math.random() * 300) + 1;
 
-// Aquí va el código JS para el Ejercicio 8. No resuelto, solo preparado.
+function generaNumero(numeroRandom) {
+
+if(numeroRandom >= 2 && numeroRandom <= 99) {    
+    console.log("El número random generado es: " + numeroRandom);
+    }
+    else{
+        console.log("El número generado no está entre 1 y 100");
+    }
+}
+
+generaNumero(numeroRandom);
