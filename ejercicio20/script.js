@@ -1,2 +1,17 @@
+const scaner = require('readline')
 
-// Aquí va el código JS para el Ejercicio 20. No resuelto, solo preparado.
+const lector = scaner.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+
+lector.question('Ingresa el texto: ', function(texto){
+    const mayuscula = texto.toUpperCase()
+    const minuscula = texto.toLowerCase()
+
+    console.log("Mayuscula:", mayuscula)
+    console.log("Minuscula:", minuscula)
+    lector.close()
+})
+
