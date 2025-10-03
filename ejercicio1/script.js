@@ -1,43 +1,46 @@
 //Ejercicio 1
 
-let nombre = "Pepito";
-console.log("El tipo de variable del nombre es " + typeof nombre);
-console.error("Error! El tipo de variable del nombre es " + typeof nombre);
-console.info("Ojo! El tipo de variable del nombre es " + typeof nombre);
-console.debug("El tipo de variable del nombre es " + typeof nombre);
+document.getElementById('miBoton').addEventListener('click', function(){
 
-console.log("");
+  let nombre = "Pepito";
+  console.log("El tipo de variable del nombre es " + typeof nombre);
+  console.error("Error! El tipo de variable del nombre es " + typeof nombre);
+  console.info("Ojo! El tipo de variable del nombre es " + typeof nombre);
+  console.debug("El tipo de variable del nombre es " + typeof nombre);
 
-let edad = 40;
-console.log("El tipo de variable de la edad es " + typeof edad);
-console.error("Error! El tipo de variable de la edad es " + typeof edad);
-console.info("Ojo! El tipo de variable de la edad es " + typeof edad);
-console.debug("El tipo de variable de la edad es " + typeof edad);
+  console.log("");
 
-console.log("");
+  let edad = 40;
+  console.log("El tipo de variable de la edad es " + typeof edad);
+  console.error("Error! El tipo de variable de la edad es " + typeof edad);
+  console.info("Ojo! El tipo de variable de la edad es " + typeof edad);
+  console.debug("El tipo de variable de la edad es " + typeof edad);
 
-let tieneTrabajo = true;
-console.log("El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo);
-console.error(
-  "Error! El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo
-);
-console.info(
-  "Ojo! El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo
-);
-console.debug("El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo);
+  console.log("");
 
-console.log("");
+  let tieneTrabajo = true;
+  console.log("El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo);
+  console.error(
+    "Error! El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo
+  );
+  console.info(
+    "Ojo! El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo
+  );
+  console.debug("El tipo de variable de tieneTrabajo es " + typeof tieneTrabajo);
 
-let puestoDeTrabajo;
-console.log(
-  "El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
-);
-console.error(
-  "Error! El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
-);
-console.info(
-  "Ojo! El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
-);
-console.debug(
-  "El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
-);
+  console.log("");
+
+  let puestoDeTrabajo;
+  console.log(
+    "El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
+  );
+  console.error(
+    "Error! El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
+  );
+  console.info(
+    "Ojo! El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
+  );
+  console.debug(
+    "El tipo de variable de puestoDeTrabajo es " + typeof puestoDeTrabajo
+  );
+})

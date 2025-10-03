@@ -1,39 +1,33 @@
-const scaner = require('readline')
+//Ejercicio21
+document.getElementById('miBoton').addEventListener('click', function(){
 
-const lector = scaner.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
 
-const numeros = []
+    const numeros = []
 
-let i = 1;
-let valor = 0;
+    let i = 1;
+    let valor = 0;
 
-function Mayor(){
+    function Mayor(){
 
-    if(i <= 5){
-        
-        lector.question(`(${i}) Introduce un numero: `, function(num){
+        if(i <= 5){
+            
+            let num = prompt(`(${i}) Introduce un numero: `)
             numeros.push(num)
             i++
             Mayor()
-        })
 
-    } else if( i === 6 ) {
-        
-        lector.question(`(${i}) Introduce un valor: `, function(valor){
+        } else {
             
+            let valor = prompt(`(${i}) Introduce un valor: `)
+                
             const mayores = numeros.filter(function(numero){
                 return numero > valor;
             })
-        
+            
             console.log(`Numeros mayores que ${valor}:`, mayores)
-            lector.close()
 
-        })
-
+        }
     }
-}
 
-Mayor()
+    Mayor()
+})
