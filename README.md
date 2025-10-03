@@ -1,0 +1,1 @@
+Los Ejercicios estan realizados en cada Script
